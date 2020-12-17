@@ -13,23 +13,23 @@ compileTestJava.options.encoding = "UTF-8"
 
 allure {
     autoconfigure = true
-    version = '2.13.0'
+    version = '2.13.3'
     useJUnit5 {
-        version = '2.13.0'
+        version = '2.13.3'
     }
 }
 
 
 repositories {
-    mavenCentral()
     jcenter()
+    mavenCentral()
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.6.1'
-    testImplementation 'com.codeborne:selenide:5.11.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.6.2'
+    testImplementation 'com.codeborne:selenide:5.11.1'
     implementation 'com.github.javafaker:javafaker:1.0.2'
-    testImplementation 'io.qameta.allure:allure-selenide:2.13.0'
+    testImplementation 'io.qameta.allure:allure-selenide:2.13.3'
     testRuntimeOnly 'org.slf4j:slf4j-simple:1.7.30'
 }
 
